@@ -4,13 +4,18 @@ var num2 = prompt("Segundo numero");
 console.log(num2);
 var operador = prompt("Operador");
 console.log(operador);
+
+var result;
+
 switch(operador){
 
-case "Divide":
-    result = num1 + " Dividido por "+ num2 + " igual " + num1 * num2 + ".";
+case "/":
+    result =  num1 / num2 ;
 break;
 
-case "Suma":
-    result = num1 + " suma "+ num2 + " igual " + num1 * num2 + ".";
+case "+":
+    result = parseInt(num1) + parseInt(num2) ;
 break;
 }
+
+console.log("Result: " + result);
